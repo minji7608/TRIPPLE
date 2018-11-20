@@ -7,7 +7,7 @@ import pygame
 import random
 
 from threading import Thread
-
+ 
 import math
 
 pygame.init()

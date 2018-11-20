@@ -25,6 +25,7 @@ screen = pygame.display.set_mode((screen_w, screen_h))
 # speed of particle and ring expansion
 expand_speed = 55
 
+# core circle
 class Core(object):
 
 	def __init__(self):
@@ -69,6 +70,7 @@ class Core(object):
 			# high pitch
 			self.color = high
 
+# expanding rings
 class Ring(object):
 
 	def __init__(self):
@@ -85,6 +87,7 @@ class Ring(object):
 
 all_sprites = pygame.sprite.Group()
 
+# particle sprite
 class Particle(pygame.sprite.Sprite):
 
 	def __init__(self, filename, r, theta):
@@ -132,6 +135,7 @@ class Particle(pygame.sprite.Sprite):
 		else:
 			return types[3]
 
+# clickable buttons
 class Button(object):
 	def __init__(self, imagefile, ypos):
 		self.image = pygame.image.load(imagefile).convert_alpha()
